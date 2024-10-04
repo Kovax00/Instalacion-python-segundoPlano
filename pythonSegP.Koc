@@ -1,0 +1,5 @@
+## requisitos
+privilegios de administrador
+
+## ejecuta el script para la descarga y instalación en segundo plano
+curl https://www.python.org/ftp/python/3.11.4/python-3.11.4-amd64.exe --output python-3.11.4-amd64.exe && python-3.11.4-amd64.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0", shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE
