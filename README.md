@@ -20,3 +20,11 @@ Este comando se divide en dos partes principales: **descarga** e **instalación*
 
 ``python-3.11.4-amd64.exe /quiet InstallAllUsers=1 PrependPath=1 Include_test=0, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, stdin=subprocess.PIPE``
 
+* /quiet: Instala Python sin mostrar ventanas ni requerir interacción.
+* InstallAllUsers=1: Lo instala para todos los usuarios del sistema.
+* PrependPath=1: Añade Python al PATH automáticamente.
+* Include_test=0: Excluye archivos de prueba.
+* shell=True: indica que se ejecutara en la consola de comandos
+* stdout=subprocess.PIPE: Redirige la salida estándar (stdout) del comando ejecutado para que sea capturada en Python.
+* stderr=subprocess.PIPE: Captura los errores del comando.
+* stdin=subprocess.PIPE:  Permite enviar datos al comando mientras se ejecuta.
